@@ -1,0 +1,34 @@
+body {
+    font-size: 64px;
+}
+h1 {
+    text-align: center
+}
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  grid-template-areas: 
+  "header header header header" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main" 
+  "main main main main";
+}
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: #ffc107;
+  text-align: right;
+}
+.btn {
+  padding: 16px;
+  text-align: center;
+  margin: 4px 2px;
+}
+button {
+  font-size: 26px;
+}
