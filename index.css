@@ -1,9 +1,12 @@
 body {
-    font-size: 64px;
+  font-size: 64px;
+  background-color: white;
 }
-h1 {
-    text-align: center
+
+button {
+  font-size: 26px;
 }
+
 .container {
   display: grid;
   justify-content: center;
@@ -17,18 +20,67 @@ h1 {
   "main main main main" 
   "main main main main";
 }
+
 .item-header {
   grid-area: header;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  background-color: #ffc107;
+  color: white;
+}
+
+#globalAnswer {
+  background-color: black;
+  font-size: 1px;
+}
+
+#currentValue {
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: span 4;
   text-align: right;
 }
-.btn {
-  padding: 16px;
+
+button.btn {
+  background-color: dimgray;
+  border: none;
+  color: white;
+  padding: 20px;
   text-align: center;
   margin: 4px 2px;
+  border-radius: 50%;
 }
-button {
-  font-size: 26px;
+
+button.orange {
+  background-color: orange;
+}
+
+button.orange:focus {
+  background-color: white;
+  color: gold
+}
+
+button.silver {
+  background-color: silver;
+  color: black;
+}
+
+button.silver:focus {
+  background-color: white;
+  color: black
+}
+
+button.equals {
+  background-color: orange;
+}
+
+button.equals:focus {
+  background-color: white;
+  color: gold
+}
+
+button.zero {
+  text-align: left;
+  padding-left: 32px;
+  grid-row: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  border-radius: 50px;
 }
